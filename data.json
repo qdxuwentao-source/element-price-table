@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T07:47:56.569Z",
+  "generatedAt": "2026-08-30T11:08:19.770Z",
   "date": "2026-08-30",
   "baseDate": "2026-08-28",
   "liveUpdated": [
@@ -7,7 +7,8 @@
     "Ag",
     "Pt",
     "Pd",
-    "Cu"
+    "Cu",
+    "Al"
   ],
   "notes": [
     "USD/CNY=6.7459"
@@ -122,13 +123,14 @@
       "note": null
     },
     "Al": {
-      "v": 23920,
+      "v": 22990.11,
       "unit": "元/吨",
-      "product": "A00铝锭",
-      "date": "2026-08-28",
-      "src": "上海金属网/长江有色",
-      "chg": 0,
-      "note": null
+      "product": "LME 铝期货（每日自动更新）",
+      "date": "2026-08-30",
+      "src": "Yahoo Finance",
+      "chg": null,
+      "note": "按实时汇率折算，可能含期货升贴水",
+      "live": true
     },
     "Si": {
       "v": 9500,
@@ -266,13 +268,13 @@
       "note": null
     },
     "Cu": {
-      "v": 98021.59,
+      "v": 99034.11,
       "unit": "元/吨",
       "product": "COMEX 铜期货（每日自动更新）",
       "date": "2026-08-30",
-      "src": "gold-api.com",
+      "src": "Yahoo Finance",
       "chg": null,
-      "note": "按实时汇率折算；国际行情与国内现货价可能存在价差",
+      "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Zn": {
@@ -411,23 +413,23 @@
       "note": null
     },
     "Pd": {
-      "v": 313.4,
+      "v": 313.81,
       "unit": "元/克",
-      "product": "国际现货价（每日自动更新）",
+      "product": "NYMEX 钯金期货（每日自动更新）",
       "date": "2026-08-30",
-      "src": "gold-api.com",
+      "src": "Yahoo Finance",
       "chg": null,
-      "note": "按实时汇率折算；国际行情与国内现货价可能存在价差",
+      "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Ag": {
-      "v": 14.42,
+      "v": 14.7,
       "unit": "元/克",
-      "product": "国际现货价（每日自动更新）",
+      "product": "COMEX 白银期货（每日自动更新）",
       "date": "2026-08-30",
-      "src": "gold-api.com",
+      "src": "Yahoo Finance",
       "chg": null,
-      "note": "按实时汇率折算；国际行情与国内现货价可能存在价差",
+      "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Cd": {
@@ -665,23 +667,23 @@
       "note": null
     },
     "Pt": {
-      "v": 396.69,
+      "v": 402.17,
       "unit": "元/克",
-      "product": "国际现货价（每日自动更新）",
+      "product": "NYMEX 铂金期货（每日自动更新）",
       "date": "2026-08-30",
-      "src": "gold-api.com",
+      "src": "Yahoo Finance",
       "chg": null,
-      "note": "按实时汇率折算；国际行情与国内现货价可能存在价差",
+      "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Au": {
-      "v": 966.53,
+      "v": 982.47,
       "unit": "元/克",
-      "product": "国际现货价（每日自动更新）",
+      "product": "COMEX 黄金期货（每日自动更新）",
       "date": "2026-08-30",
-      "src": "gold-api.com",
+      "src": "Yahoo Finance",
       "chg": null,
-      "note": "按实时汇率折算；国际行情与国内现货价可能存在价差",
+      "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Hg": {
