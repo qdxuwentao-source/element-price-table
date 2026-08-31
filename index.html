@@ -272,7 +272,9 @@ function keepTip(){ if(hideTimer){ clearTimeout(hideTimer); hideTimer=null; } }
 function openBuy(sym){
   var b=BUY[sym];
   var url=(b&&b.u1688)?b.u1688:'https://s.1688.com/selloffer/offer_search.htm?keywords='+encodeURIComponent(sym);
-  window.open(url,'_blank','noopener');
+  var w=null;
+  try{ w=window.open(url,'_blank','noopener'); }catch(e){ w=null; }
+  if(!w){ window.location.href=url; }
 }
 const search=document.getElementById('search');
 let activeCat=null;
