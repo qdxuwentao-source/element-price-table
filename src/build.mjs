@@ -143,6 +143,7 @@ ${CSS}
   ${footer}
 </footer>
 <div id="tooltip"></div>
+<div id="toast"></div>
 <script>
 const ELEMENTS = ${JSON.stringify(ELEMENTS)};
 const PRICES = ${JSON.stringify(prices)};
