@@ -83,6 +83,7 @@ function render(){
     d.addEventListener('mouseenter',function(ev){showTip(ev,cell,p);});
     d.addEventListener('mousemove',moveTip);
     d.addEventListener('mouseleave',hideTip);
+    d.addEventListener('click',function(ev){ev.stopPropagation();openBuy(el.sym);});
     table.appendChild(d);
     cellNodes.push(d);
   });
@@ -116,9 +117,13 @@ function tipHTML(el,period,p){
     h+='<div class="tt-no">暂无公开现货报价</div>';
     h+='<div class="tt-note">'+ (NO_PRICE_NOTE[el.sym]||'该元素无活跃的大宗商品/现货交易市场') +'</div>';
   }
+  if(BUY[el.sym]){
+    h+='<div class="tt-buy"><span>购买渠道：</span><a href="'+BUY[el.sym].u1688+'" target="_blank" rel="noopener">1688 现货批发</a><a href="'+BUY[el.sym].umic+'" target="_blank" rel="noopener">中国制造网</a></div>';
+  }
   return h;
 }
 function showTip(ev,cell,p){
+  keepTip();
   const el=cell.el, period=cell.period;
   tip.innerHTML=tipHTML(el,period,p);
   tip.classList.add('show');
@@ -132,8 +137,15 @@ function moveTip(ev){
   if(y+r.height>window.innerHeight-8) y=ev.clientY-r.height-gap;
   tip.style.left=x+'px'; tip.style.top=y+'px';
 }
-function hideTip(){ tip.classList.remove('show'); }
+let hideTimer=null;
+function hideTip(){ if(hideTimer) clearTimeout(hideTimer); hideTimer=setTimeout(function(){ tip.classList.remove('show'); },200); }
+function keepTip(){ if(hideTimer){ clearTimeout(hideTimer); hideTimer=null; } }
 
+function openBuy(sym){
+  var b=BUY[sym];
+  var url=(b&&b.u1688)?b.u1688:'https://s.1688.com/selloffer/offer_search.htm?keywords='+encodeURIComponent(sym);
+  window.open(url,'_blank','noopener');
+}
 const search=document.getElementById('search');
 let activeCat=null;
 function applyFilter(){
@@ -215,6 +227,8 @@ document.getElementById('refresh').addEventListener('click',function(ev){
   ev.target.disabled=true;
   liveUpdate().finally(function(){ev.target.disabled=false;});
 });
+tip.addEventListener('mouseenter',keepTip);
+tip.addEventListener('mouseleave',hideTip);
 buildCells();
 render();
 liveUpdate();

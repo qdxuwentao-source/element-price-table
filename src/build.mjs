@@ -6,7 +6,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { ELEMENTS, BASE_PRICES, BASE_DATE } from './base-data.mjs';
+import { ELEMENTS, BASE_PRICES, BASE_DATE, BUY } from './base-data.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(here, '..');
@@ -97,7 +97,7 @@ for (const [sym, cfg] of Object.entries(yahoo)) {
 // ---------- 4) 生成 index.html ----------
 const summary = Object.keys(prices).length;
 let appJs = APP_JS.replace('内置参考价（2026-08-28）', '内置参考价（' + today + '）');
-const footer = `数据说明：页面内置价格为 <b>${today}</b> 自动构建的公开现货参考价（基础数据 ${BASE_DATE}），来源包括上海金属网、长江有色、SMM（上海有色）、生意社、Mysteel、新华·包头稀土指数、中国氢价指数体系等；金/银/铂/钯/铜 每日自动更新（页面打开时还会联网刷新实时价），其他元素价格以参考价显示。
+const footer = `数据说明：页面内置价格为 <b>${today}</b> 自动构建的公开现货参考价（基础数据 ${BASE_DATE}），来源包括上海金属网、长江有色、SMM（上海有色）、生意社、Mysteel、新华·包头稀土指数、中国氢价指数体系等；金/银/铂/钯/铜 每日自动更新（页面打开时还会联网刷新实时价），其他元素价格以参考价显示。点击任意元素可跳转到售卖该元素单质的商家（1688 现货 / 中国制造网）。
   价格可能因规格、地区、纯度不同而有差异，且存在滞后，实际交易请以交易所或市场实时报价为准，本页数据不构成投资建议。`;
 
 const html = `<!DOCTYPE html>
@@ -137,7 +137,7 @@ ${CSS}
   <div class="table-wrap">
     <div id="table"></div>
   </div>
-  <p style="margin-top:14px;font-size:12px;color:var(--dim)">价格单位：元/克、元/千克、元/吨、元/立方米、美元/磅 等，随元素而异；鼠标悬停单元格可查看规格、日期与来源。数据每日自动更新，本次构建日期：${today}（自动更新：${live.length ? live.join('、') : '无'}）。</p>
+  <p style="margin-top:14px;font-size:12px;color:var(--dim)">价格单位：元/克、元/千克、元/吨、元/立方米、美元/磅 等，随元素而异；鼠标悬停可查看规格与来源，<b>点击元素格可直接跳转购买渠道</b>。数据每日自动更新，本次构建日期：${today}（自动更新：${live.length ? live.join('、') : '无'}）。</p>
 </main>
 <footer>
   ${footer}
@@ -146,6 +146,7 @@ ${CSS}
 <script>
 const ELEMENTS = ${JSON.stringify(ELEMENTS)};
 const PRICES = ${JSON.stringify(prices)};
+const BUY = ${JSON.stringify(BUY)};
 </script>
 <script>
 ${appJs}

@@ -50,7 +50,7 @@ main{max-width:1280px;margin:18px auto;padding:0 22px}
 .cell .live-dot{position:absolute;top:4px;right:5px;width:5px;height:5px;border-radius:50%;background:#7ce38b;display:none}
 .cell.live .live-dot{display:block}
 
-#tooltip{position:fixed;z-index:100;max-width:330px;min-width:230px;background:rgba(22,30,48,.97);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:0 16px 40px rgba(0,0,0,.55);pointer-events:none;display:none;font-size:13px;line-height:1.55}
+#tooltip{position:fixed;z-index:100;max-width:330px;min-width:230px;background:rgba(22,30,48,.97);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:0 16px 40px rgba(0,0,0,.55);pointer-events:auto;display:none;font-size:13px;line-height:1.55}
 #tooltip.show{display:block}
 .tt-head{display:flex;align-items:baseline;gap:8px;margin-bottom:8px}
 .tt-sym{font-size:26px;font-weight:800}
@@ -72,3 +72,8 @@ footer{max-width:1280px;margin:26px auto 0;padding:0 22px;color:var(--dim);font-
   .search input{width:130px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.tt-buy{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:7px;padding-top:7px;border-top:1px dashed var(--line);font-size:12px}
+.tt-buy>span{color:var(--dim)}
+.tt-buy a{color:var(--accent);text-decoration:none;border:1px solid rgba(106,169,255,.45);border-radius:6px;padding:2px 9px;white-space:nowrap}
+.tt-buy a:hover{background:rgba(106,169,255,.16)}
+.cell{cursor:pointer}
