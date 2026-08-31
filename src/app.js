@@ -141,9 +141,18 @@ let hideTimer=null;
 function hideTip(){ if(hideTimer) clearTimeout(hideTimer); hideTimer=setTimeout(function(){ tip.classList.remove('show'); },200); }
 function keepTip(){ if(hideTimer){ clearTimeout(hideTimer); hideTimer=null; } }
 
+function showToast(msg){
+  var t=document.getElementById('toast');
+  if(!t) return;
+  t.textContent=msg;
+  t.classList.add('show');
+  clearTimeout(showToast._t);
+  showToast._t=setTimeout(function(){ t.classList.remove('show'); }, 2600);
+}
 function openBuy(sym){
   var b=BUY[sym];
   var url=(b&&b.u1688)?b.u1688:'https://s.1688.com/selloffer/offer_search.htm?keywords='+encodeURIComponent(sym);
+  showToast('正在跳转购买渠道：1688 现货搜索「'+(b?b.kw:sym)+'」');
   var w=null;
   try{ w=window.open(url,'_blank','noopener'); }catch(e){ w=null; }
   if(!w){ window.location.href=url; }
