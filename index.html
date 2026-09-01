@@ -289,8 +289,8 @@ function openInNewTab(url){
 function openBuy(sym){
   var b=BUY[sym];
   var url=(b&&b.uen)?b.uen:(b&&b.ubd?b.ubd:'https://www.baidu.com/s?wd='+encodeURIComponent(sym));
-  showToast('正在打开：'+(b&&b.uen?'安耐吉化学':'百度')+'「'+(b?b.kw:sym)+'」');
-  openInNewTab(url);
+  showToast('正在跳转：'+(b&&b.uen?'安耐吉化学':'百度')+'「'+(b?b.kw:sym)+'」（返回键可回到本页）');
+  window.location.href=url;
 }
 const search=document.getElementById('search');
 let activeCat=null;
@@ -365,7 +365,7 @@ async function liveUpdate(){
   if(done.length){
     setStatus('已联网更新：'+done.join('/')+'（实时） · 其余为内置参考价','live');
   }else{
-    setStatus('联网获取失败，显示内置参考价（2026-09-01）','off');
+    setStatus('联网获取失败，显示内置参考价（2026-09-02）','off');
   }
   render();
 }

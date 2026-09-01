@@ -157,8 +157,8 @@ function openInNewTab(url){
 function openBuy(sym){
   var b=BUY[sym];
   var url=(b&&b.uen)?b.uen:(b&&b.ubd?b.ubd:'https://www.baidu.com/s?wd='+encodeURIComponent(sym));
-  showToast('正在打开：'+(b&&b.uen?'安耐吉化学':'百度')+'「'+(b?b.kw:sym)+'」');
-  openInNewTab(url);
+  showToast('正在跳转：'+(b&&b.uen?'安耐吉化学':'百度')+'「'+(b?b.kw:sym)+'」（返回键可回到本页）');
+  window.location.href=url;
 }
 const search=document.getElementById('search');
 let activeCat=null;
