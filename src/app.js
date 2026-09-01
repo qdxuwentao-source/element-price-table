@@ -118,7 +118,7 @@ function tipHTML(el,period,p){
     h+='<div class="tt-note">'+ (NO_PRICE_NOTE[el.sym]||'该元素无活跃的大宗商品/现货交易市场') +'</div>';
   }
   if(BUY[el.sym]){
-    h+='<div class="tt-buy"><span>购买渠道：</span><a href="'+BUY[el.sym].uen+'" target="_blank" rel="noopener">安耐吉化学</a><a href="'+BUY[el.sym].ubd+'" target="_blank" rel="noopener">百度搜索企业</a></div>';
+    h+='<div class="tt-buy"><span>购买渠道：</span>'+(BUY[el.sym].uen?'<a href="'+BUY[el.sym].uen+'" target="_blank" rel="noopener">安耐吉化学</a>':'')+'<a href="'+BUY[el.sym].ubd+'" target="_blank" rel="noopener">百度搜索企业</a></div>';
   }
   return h;
 }
@@ -151,8 +151,8 @@ function showToast(msg){
 }
 function openBuy(sym){
   var b=BUY[sym];
-  var url=(b&&b.uen)?b.uen:'https://www.energy-chemical.com/front/goToAllClass.htm?keywords='+encodeURIComponent(sym);
-  showToast('正在跳转：安耐吉化学搜索「'+(b?b.kw:sym)+'」');
+  var url=(b&&b.uen)?b.uen:(b&&b.ubd?b.ubd:'https://www.baidu.com/s?wd='+encodeURIComponent(sym));
+  showToast('正在跳转：'+(b&&b.uen?'安耐吉化学':'百度')+'搜索「'+(b?b.kw:sym)+'」');
   var w=null;
   try{ w=window.open(url,'_blank','noopener'); }catch(e){ w=null; }
   if(!w){ window.location.href=url; }
