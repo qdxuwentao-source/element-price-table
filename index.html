@@ -281,13 +281,16 @@ function showToast(msg){
   clearTimeout(showToast._t);
   showToast._t=setTimeout(function(){ t.classList.remove('show'); }, 2600);
 }
+function openInNewTab(url){
+  var a=document.createElement('a');
+  a.href=url; a.target='_blank'; a.rel='noopener noreferrer';
+  document.body.appendChild(a); a.click(); a.remove();
+}
 function openBuy(sym){
   var b=BUY[sym];
   var url=(b&&b.uen)?b.uen:(b&&b.ubd?b.ubd:'https://www.baidu.com/s?wd='+encodeURIComponent(sym));
-  showToast('正在跳转：'+(b&&b.uen?'安耐吉化学':'百度')+'搜索「'+(b?b.kw:sym)+'」');
-  var w=null;
-  try{ w=window.open(url,'_blank'); }catch(e){ w=null; }
-  if(!w){ window.location.href=url; }
+  showToast('正在打开：'+(b&&b.uen?'安耐吉化学':'百度')+'「'+(b?b.kw:sym)+'」');
+  openInNewTab(url);
 }
 const search=document.getElementById('search');
 let activeCat=null;
