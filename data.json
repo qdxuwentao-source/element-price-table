@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-04T12:29:27.597Z",
-  "date": "2026-09-04",
+  "generatedAt": "2026-09-05T00:32:42.185Z",
+  "date": "2026-09-05",
   "baseDate": "2026-08-28",
   "liveUpdated": [
     "Au",
@@ -123,10 +123,10 @@
       "note": null
     },
     "Al": {
-      "v": 23378.99,
+      "v": 23298.16,
       "unit": "元/吨",
       "product": "LME 铝期货（每日自动更新）",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -268,10 +268,10 @@
       "note": null
     },
     "Cu": {
-      "v": 98970.45,
+      "v": 99015,
       "unit": "元/吨",
       "product": "COMEX 铜期货（每日自动更新）",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -413,20 +413,20 @@
       "note": null
     },
     "Pd": {
-      "v": 308.26,
+      "v": 303.17,
       "unit": "元/克",
       "product": "NYMEX 钯金期货（每日自动更新）",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Ag": {
-      "v": 14.61,
+      "v": 14.47,
       "unit": "元/克",
       "product": "COMEX 白银期货（每日自动更新）",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -667,20 +667,20 @@
       "note": null
     },
     "Pt": {
-      "v": 394.17,
+      "v": 395.97,
       "unit": "元/克",
       "product": "NYMEX 铂金期货（每日自动更新）",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Au": {
-      "v": 977.32,
+      "v": 969.55,
       "unit": "元/克",
       "product": "COMEX 黄金期货（每日自动更新）",
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
