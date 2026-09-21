@@ -1,17 +1,16 @@
 {
-  "generatedAt": "2026-09-20T12:26:57.853Z",
-  "date": "2026-09-20",
+  "generatedAt": "2026-09-21T00:30:55.550Z",
+  "date": "2026-09-21",
   "baseDate": "2026-08-28",
   "liveUpdated": [
     "Au",
     "Ag",
     "Pt",
     "Pd",
-    "Cu",
-    "Al"
+    "Cu"
   ],
   "notes": [
-    "USD/CNY=6.7184"
+    "USD/CNY=6.7047"
   ],
   "prices": {
     "H": {
@@ -268,13 +267,13 @@
       "note": null
     },
     "Cu": {
-      "v": 99111.47,
+      "v": 96990.36,
       "unit": "元/吨",
       "product": "COMEX 铜期货（每日自动更新）",
-      "date": "2026-09-20",
-      "src": "Yahoo Finance",
+      "date": "2026-09-21",
+      "src": "gold-api.com",
       "chg": null,
-      "note": "按实时汇率折算，可能含期货升贴水",
+      "note": "按实时汇率折算；国际行情与国内现货价可能存在价差",
       "live": true
     },
     "Zn": {
@@ -413,23 +412,23 @@
       "note": null
     },
     "Pd": {
-      "v": 285.01,
+      "v": 285.62,
       "unit": "元/克",
-      "product": "NYMEX 钯金期货（每日自动更新）",
-      "date": "2026-09-20",
-      "src": "Yahoo Finance",
+      "product": "国际现货价（每日自动更新）",
+      "date": "2026-09-21",
+      "src": "gold-api.com",
       "chg": null,
-      "note": "按实时汇率折算，可能含期货升贴水",
+      "note": "按实时汇率折算；国际行情与国内现货价可能存在价差",
       "live": true
     },
     "Ag": {
-      "v": 14.5,
+      "v": 14.33,
       "unit": "元/克",
-      "product": "COMEX 白银期货（每日自动更新）",
-      "date": "2026-09-20",
-      "src": "Yahoo Finance",
+      "product": "国际现货价（每日自动更新）",
+      "date": "2026-09-21",
+      "src": "gold-api.com",
       "chg": null,
-      "note": "按实时汇率折算，可能含期货升贴水",
+      "note": "按实时汇率折算；国际行情与国内现货价可能存在价差",
       "live": true
     },
     "Cd": {
@@ -667,20 +666,20 @@
       "note": null
     },
     "Pt": {
-      "v": 390.19,
+      "v": 388.87,
       "unit": "元/克",
-      "product": "NYMEX 铂金期货（每日自动更新）",
-      "date": "2026-09-20",
-      "src": "Yahoo Finance",
+      "product": "国际现货价（每日自动更新）",
+      "date": "2026-09-21",
+      "src": "gold-api.com",
       "chg": null,
-      "note": "按实时汇率折算，可能含期货升贴水",
+      "note": "按实时汇率折算；国际行情与国内现货价可能存在价差",
       "live": true
     },
     "Au": {
-      "v": 955.79,
+      "v": 948,
       "unit": "元/克",
       "product": "COMEX 黄金期货（每日自动更新）",
-      "date": "2026-09-20",
+      "date": "2026-09-21",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
