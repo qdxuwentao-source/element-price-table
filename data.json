@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-04T05:47:06.963Z",
+  "generatedAt": "2026-10-04T16:50:18.326Z",
   "date": "2026-10-04",
   "baseDate": "2026-08-28",
   "liveUpdated": [
+    "Au",
     "Ag",
     "Pt",
     "Pd",
     "Cu",
-    "Au",
     "Al"
   ],
   "notes": [
