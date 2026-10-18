@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-17T15:29:12.679Z",
-  "date": "2026-10-17",
+  "generatedAt": "2026-10-18T04:25:31.567Z",
+  "date": "2026-10-18",
   "baseDate": "2026-08-28",
   "liveUpdated": [
+    "Au",
+    "Ag",
     "Pt",
     "Pd",
     "Cu",
-    "Au",
-    "Ag",
     "Al"
   ],
   "notes": [
-    "USD/CNY=6.6985"
+    "USD/CNY=6.7029"
   ],
   "prices": {
     "H": {
@@ -123,10 +123,10 @@
       "note": null
     },
     "Al": {
-      "v": 20721.7,
+      "v": 20735.46,
       "unit": "元/吨",
       "product": "LME 铝期货（每日自动更新）",
-      "date": "2026-10-17",
+      "date": "2026-10-18",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -268,10 +268,10 @@
       "note": null
     },
     "Cu": {
-      "v": 97074.72,
+      "v": 97139.18,
       "unit": "元/吨",
       "product": "COMEX 铜期货（每日自动更新）",
-      "date": "2026-10-17",
+      "date": "2026-10-18",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -413,20 +413,20 @@
       "note": null
     },
     "Pd": {
-      "v": 240.9,
+      "v": 241.06,
       "unit": "元/克",
       "product": "NYMEX 钯金期货（每日自动更新）",
-      "date": "2026-10-17",
+      "date": "2026-10-18",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Ag": {
-      "v": 12.34,
+      "v": 12.35,
       "unit": "元/克",
       "product": "COMEX 白银期货（每日自动更新）",
-      "date": "2026-10-17",
+      "date": "2026-10-18",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -667,20 +667,20 @@
       "note": null
     },
     "Pt": {
-      "v": 351.71,
+      "v": 351.94,
       "unit": "元/克",
       "product": "NYMEX 铂金期货（每日自动更新）",
-      "date": "2026-10-17",
+      "date": "2026-10-18",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Au": {
-      "v": 900.44,
+      "v": 901.04,
       "unit": "元/克",
       "product": "COMEX 黄金期货（每日自动更新）",
-      "date": "2026-10-17",
+      "date": "2026-10-18",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
