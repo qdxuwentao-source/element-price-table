@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-31T17:14:13.046Z",
-  "date": "2026-10-31",
+  "generatedAt": "2026-11-01T05:56:24.021Z",
+  "date": "2026-11-01",
   "baseDate": "2026-08-28",
   "liveUpdated": [
     "Au",
@@ -11,7 +11,7 @@
     "Al"
   ],
   "notes": [
-    "USD/CNY=6.6696"
+    "USD/CNY=6.6710"
   ],
   "prices": {
     "H": {
@@ -123,10 +123,10 @@
       "note": null
     },
     "Al": {
-      "v": 21125.85,
+      "v": 21130.37,
       "unit": "元/吨",
       "product": "LME 铝期货（每日自动更新）",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -268,10 +268,10 @@
       "note": null
     },
     "Cu": {
-      "v": 95310.52,
+      "v": 95330.9,
       "unit": "元/吨",
       "product": "COMEX 铜期货（每日自动更新）",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -413,10 +413,10 @@
       "note": null
     },
     "Pd": {
-      "v": 211.79,
+      "v": 211.84,
       "unit": "元/克",
       "product": "NYMEX 钯金期货（每日自动更新）",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -426,7 +426,7 @@
       "v": 10.57,
       "unit": "元/克",
       "product": "COMEX 白银期货（每日自动更新）",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -667,20 +667,20 @@
       "note": null
     },
     "Pt": {
-      "v": 307.92,
+      "v": 307.99,
       "unit": "元/克",
       "product": "NYMEX 铂金期货（每日自动更新）",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Au": {
-      "v": 836.05,
+      "v": 836.23,
       "unit": "元/克",
       "product": "COMEX 黄金期货（每日自动更新）",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
