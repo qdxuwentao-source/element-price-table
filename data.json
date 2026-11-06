@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T19:53:33.466Z",
-  "date": "2026-11-05",
+  "generatedAt": "2026-11-06T06:33:57.364Z",
+  "date": "2026-11-06",
   "baseDate": "2026-08-28",
   "liveUpdated": [
     "Au",
@@ -11,7 +11,7 @@
     "Al"
   ],
   "notes": [
-    "USD/CNY=6.6854"
+    "USD/CNY=6.6825"
   ],
   "prices": {
     "H": {
@@ -123,10 +123,10 @@
       "note": null
     },
     "Al": {
-      "v": 21343.21,
+      "v": 21250.43,
       "unit": "元/吨",
       "product": "LME 铝期货（每日自动更新）",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -268,10 +268,10 @@
       "note": null
     },
     "Cu": {
-      "v": 92250.34,
+      "v": 91753.67,
       "unit": "元/吨",
       "product": "COMEX 铜期货（每日自动更新）",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -413,20 +413,20 @@
       "note": null
     },
     "Pd": {
-      "v": 225.47,
+      "v": 220.33,
       "unit": "元/克",
       "product": "NYMEX 钯金期货（每日自动更新）",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Ag": {
-      "v": 11.3,
+      "v": 11.08,
       "unit": "元/克",
       "product": "COMEX 白银期货（每日自动更新）",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
@@ -667,20 +667,20 @@
       "note": null
     },
     "Pt": {
-      "v": 329.23,
+      "v": 324.85,
       "unit": "元/克",
       "product": "NYMEX 铂金期货（每日自动更新）",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
       "live": true
     },
     "Au": {
-      "v": 885.86,
+      "v": 872,
       "unit": "元/克",
       "product": "COMEX 黄金期货（每日自动更新）",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "src": "Yahoo Finance",
       "chg": null,
       "note": "按实时汇率折算，可能含期货升贴水",
